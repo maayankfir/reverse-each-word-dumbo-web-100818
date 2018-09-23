@@ -7,8 +7,5 @@ def reverse_each_word(sentence)
 end
 
 def reverse_each_word(sentence2)
-  sentence2.split(" ").collect do |string|
-    string.reverse!
-  end
-    sentence2.join(" ")
+  sentence2.split(" ").collect {|word| word.reverse!}.join(" ")
 end
